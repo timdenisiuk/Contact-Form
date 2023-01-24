@@ -14,9 +14,9 @@ const Input = ({id, name, label, placeholder, value, onChange, error, errorMessa
              id={id} 
              name={name} 
              placeholder={placeholder}
-             className="w-full text-gray-900 placeholder-gray-400 border-gray-500 border-opacity-50 rounded-md focus:ring-2 focus:ring-blue-500"
+             className="w-full text-gray-900 placeholder-gray-400 border-gray-500 border-opacity-50 rounded-md focus:ring-2 focus:ring-indigo-500"
              {...props}/>
-             {error ? <p className="text-red-500 italic text-sm">*{errorMessage}</p> : null}
+             {error ? <p className="text-sm italic text-red-500">*{errorMessage}</p> : null}
         </div>
     );
 }

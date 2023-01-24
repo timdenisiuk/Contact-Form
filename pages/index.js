@@ -20,11 +20,11 @@ export default function Home() {
       <Head>
         <title>Contact Us</title>
       </Head>
-      <div className="m-0 p-0 box-border font-sans font-bold bg-blue-200">
-        <main className="p-8 flex flex-col items-center min-h-screen">
+      <div className="box-border p-0 m-0 font-sans font-bold bg-blue-200">
+        <main className="flex flex-col items-center min-h-screen p-8">
           <h1 className="text-5xl mr-80 mb-14 pr-96 ">Contact us!</h1>
           <p className="text-xl pb-28">Questions? Comments? Concerns? Send us an email, and we will get back to you as soon as possible!</p>
-          <button className = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+          <button className = "px-4 py-2 font-bold text-white bg-blue-500 border border-blue-700 rounded hover:bg-blue-700"
           onClick={() => setIsTriggered(true) }>Contact Us</button>
           <Form trigger={isTriggered} setTrigger={setIsTriggered} route={router}/>
         </main>

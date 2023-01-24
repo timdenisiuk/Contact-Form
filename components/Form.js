@@ -80,13 +80,14 @@ export default function Form(props) {
   
   //if trigger is true, renders the form window, otherwise no render
   return (props.trigger) ? (
-      <div className="fixed w-6/12 h-9/12 bg-gray-300 border-2 border-black pb-6 rounded-lg">
+      <div className="fixed w-6/12 pb-6 bg-blue-100 border-2 border-gray-500 rounded-lg h-9/12">
           <div className='px-3 pt-16'>
             <form className="flex flex-col items-center w-2/3 mx-auto" onSubmit={handleSubmit}>
-              <button className = "absolute top-4 right-4 mr-6 mt-3 bg-white rounded-md p-2 inline-flex items-center justify-center \
+              <button className = "absolute top-4 right-4 mr-6 mt-3 ring-1 ring-gray-400 bg-white rounded-md p-2 \
                text-red-700 hover:text-red-800 hover:bg-gray-100 \
-               focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" 
+               focus:outline-none focus:ring-2 focus:ring-indigo-500" 
                type='button' onClick={closeForm}>X</button>
+
               <Input 
               error={!!errors.name}
               errorMessage={errors.name}
@@ -94,7 +95,7 @@ export default function Form(props) {
               onChange={onChange} 
               id="name" 
               name="name" 
-              placeholder="Tim" 
+              placeholder="John Doe" 
               label="Your Name"/>
 
               <Input 
@@ -104,7 +105,7 @@ export default function Form(props) {
               onChange={onChange} 
               id="email" 
               name="email" 
-              placeholder="tdenis987@gmail.com" 
+              placeholder="JohnDoe@gmail.com" 
               label="Your Email"/>
 
               <TextArea 
@@ -114,7 +115,7 @@ export default function Form(props) {
               onChange={onChange} 
               id="message" 
               name="message" 
-              placeholder="Hi There" 
+              placeholder="Hello" 
               label="Your Message" />
 
               <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold \
