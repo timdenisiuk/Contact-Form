@@ -12,7 +12,7 @@ export default async function handler(req, res) {
         from: data.email,
         subject: `Message from ${data.name}`,
         text: "This is a test string",
-        html: `<h1>You have received from ${data.name} at ${data.email}</h1> \
+        html: `<h1>You have received from ${data.name}</h1> \
         <p>${data.message}</p>`
       });
       res.status(200).json({success: true});
