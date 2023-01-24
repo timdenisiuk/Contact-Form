@@ -9,10 +9,11 @@ const ThankYou = () => {
             <Head>
                 <title>Thank You</title>
             </Head>
-            <div className="m-0 p-0 box-border font-sans font-bold bg-blue-200">
-                <main className="p-8 flex flex-col items-center min-h-screen">
-                    <h1 className="text-4xl">Thank you, you should hear from us soon</h1>
-                    <Link href="/" className="pt-16 text-2xl underline text-blue-600">Home</Link>
+            <div className="box-border p-0 m-0 font-sans font-bold bg-blue-200">
+                <main className="flex flex-col items-center min-h-screen p-8">
+                    <h1 className="pb-4 text-2xl lg:text-6xl">Thank You!</h1>
+                    <h1 className="text-lg lg:text-4xl">You should hear from us soon.</h1>
+                    <Link href="/" className="pt-12 text-2xl text-blue-600 underline">Home</Link>
                 </main>
             </div>
         </>
