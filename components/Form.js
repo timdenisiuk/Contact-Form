@@ -80,7 +80,8 @@ export default function Form(props) {
   
   //if trigger is true, renders the form window, otherwise no render
   return (props.trigger) ? (
-      <div className="absolute w-11/12 pb-6 overflow-y-auto bg-blue-100 border-2 border-gray-500 rounded-lg lg:w-6/12 h-9/12 lg:pt-2">
+      <div className="absolute w-11/12 pb-6 overflow-y-auto bg-blue-100 border-2 \
+       border-gray-500 rounded-lg lg:w-6/12 h-9/12 lg:pt-2 mt-8 lg:mt-12">
           <div className='px-3 pt-16'>
             <form className="flex flex-col items-center w-2/3 mx-auto sm:px-10" onSubmit={handleSubmit}>
               <button className = "absolute top-4 right-4 mr-6 mt-3 ring-1 ring-gray-400 bg-white rounded-md p-2 \
