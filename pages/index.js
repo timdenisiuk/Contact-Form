@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <title>Contact Us</title>
       </Head>
-      <div className="box-border p-0 m-0 font-sans font-bold bg-blue-200">
+      <div className="box-border w-screen p-0 m-0 overflow-hidden font-sans font-bold bg-blue-200">
         <main className="flex flex-col items-center min-h-screen p-8">
           <h1 className="pb-4 text-2xl text-center sm:text-center lg:text-5xl lg:pb-5">Contact us!</h1>
           <p className="pb-2 lg:text-xl">Questions? Comments? Concerns?</p>
